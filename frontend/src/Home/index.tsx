@@ -390,7 +390,7 @@ export default function Home() {
                 <Draggable
                     key={index}
                     defaultPosition={latexPosition}
-                    onStop={(e, data) => setLatexPosition({ x: data.x, y: data.y })}
+                    onStop={(_, data) => setLatexPosition({ x: data.x, y: data.y })}
                 >
                     <div className="absolute p-3 rounded-lg bg-gray-900/80 backdrop-blur-md text-white border border-gray-700/50 shadow-2xl animate-in fade-in slide-in-from-bottom-2 duration-500">
                         <div className="latex-content cursor-move">{latex}</div>
